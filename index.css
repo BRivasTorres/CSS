@@ -1,0 +1,14 @@
+.drop {
+    background-color: #00ebd9;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border-radius: 50% 5% 50% 50%;
+    transition: all 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.drop:hover {
+    background-color: #f9f871;
+    transform: rotate(90deg) scale(1.5) translateX(60px) skew(30deg);
+}
