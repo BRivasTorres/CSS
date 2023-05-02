@@ -1,0 +1,30 @@
+.box {
+    border: 1px solid;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 300px;
+    animation-name: cambiacolor;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /*TODAS LAS FUNCIONES DE ARRIBA PODRIAN IR EN UNA SOLO LINEA, TAL COMO IRIA ENB LA ULTIMA, SOLO DEBO SEGUIR LA GUIA DE VSC*/
+    /*SI TUVIERA OTRA ANIMACION QUE QUISIERA UTILIZAR PODRIA HACERLA AGREGANDOLA A LA MISMA LINEA SEPARANDOLA POR UNA COMA, Y ABAJO SOLO TENDRIA QUE UTILIZAR OTRO "KEYFRAMES" POR EJEMPLO EN ESA OTRA ANIMACION LE PODRIA CAMBAIR EL BORDE. ASI ESTARIA CAMBIANDO TANTO EL COLOR COMO EL BORDE*/
+}
+
+@keyframes cambiacolor {
+    0%{
+        background-color: white;
+        width: 600px;
+        height: 600px;
+    }
+    100%{
+        background-color: red;
+        width: 600px;
+        height: 600px;
+    }
+}

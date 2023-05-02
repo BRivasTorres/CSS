@@ -1,0 +1,322 @@
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+
+    a[href="#top"] {
+      margin: 1rem;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 50vh;
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .menu {
+      margin-bottom: 100vh;
+      font-size: 125%;
+    }
+
+    .menu li {
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 80%;
+      height: 80vh;
+      background-color: #222;
+      border: medium solid #000;    
+    }
+
+    .item {
+      padding: 1rem;
+      font-size: 1.25rem;
+      background-color: #666;
+      border: medium solid #999;
+    }
+
+    .sub-item {
+      padding: 1rem;
+      background-color: #666;
+      border: medim solic #ccc;
+    }
+  
+    .grid-explicit {
+      display: grid;
+      /* Grid de 3 por 3 */
+      grid-template-columns: 2rem 20vh 30%;
+      grid-template-rows: 50% 100px 1fr;
+      /* Grid de 4 por 5 */
+      grid-template-columns: repeat(5, 20%);
+      grid-template-rows: repeat(4, auto);
+      /* Gird de 4 por 5 */
+      grid-template-columns: 20% repeat(2, 30%) 20%;
+      grid-template-rows: repeat(5, auto);
+      /* Dando espaciados entre cada columna  */
+      grid-gap: 100px 0px;
+      /* row column */
+      gap: 1vw 1vw;
+      gap: 0;
+  }
+
+
+
+
+
+
+.grid-explicit .item:nth-child(10) {
+  background-color: cyan;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  grid-column: 3 / 5;
+  /* //El grid area es una forma mas corta de escribir grid column y grid row recibiendo los siguientes valores: "grid-wor / grid-column" */
+  grid-area: 2 / 3 /3 / 5;
+
+}
+
+.grid-explicit .item:nth-child(12) {
+    background-color: cyan;
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.grid-explicit .item:nth-child(15) {
+  background-color: cyan;
+  grid-row: 1/ span 2;
+  grid-column: 1/ span 2;
+}
+
+
+
+
+
+
+.grid-line-names {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: /*[aqui irian como quiero nombrar a mis lineas, si es que lo deseo hacer de esta forma]*/ 1fr [] 1fr [] 1fr [] 1fr;
+}
+
+
+
+
+
+
+.grid-areas {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 100px 1fr 200px 60px;
+  grid-template-areas: 
+  "header header"
+  "content sidevar" 
+  "content ." /*Para dejar una selda vacia, la puedo declarar con un punto*/ 
+  "footer footer";
+}
+
+/* DE ESTA MANERA PUEDO MAQUETAR DE UNA MANERA MUCHO MAS FACIL, AQUI LE ESTOY ASIGNANDO A LAS CLASES QUE DECLARE EN MI "HTML" EL ESPACIO QUE OCUPEN, SEGÚN LA GUÍA DE ARRIBA */
+.header {
+  grid-area: header;
+}
+.article {
+  grid-area: content;
+}
+.aside {
+  grid-area: sidevar;
+}
+.footer {
+  grid-area: footer;
+}
+
+
+
+
+
+.grid-implicit{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  /*Esto sirve ya que al momento de maquetar al poner display grid nuestro contenedor se comportara de una manera "envidiosa", es decir que ocupara todo el ancho de la pantalla a diferencia de etiquetas como el boton o el ancla que solo ocupan el espacio necesario*/
+}
+
+
+
+/* Superponiendo objetos de una manera facil y sencilla */
+.grid-layers {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+.grid-layers .item:nth-child(1) {
+  background-color: cyan;
+  grid-row: 1 / 3;
+  grid-column: 1 /3;
+}
+.grid-layers .item:nth-child(2) {
+  background-color: cyan;
+  grid-row: 1 /3 ;
+  grid-column: 3 / 5;
+}
+.grid-layers .item:nth-child(3) {
+  background-color: cyan;
+  grid-row: 3 / 5;
+  grid-column: 1 /3;
+}
+.grid-layers .item:nth-child(4) {
+  background-color: cyan;
+  grid-row: 3 / 5 ;
+  grid-column: 3 / 5;
+}
+.grid-layers .item:nth-child(5) {
+  background-color: cornflowerblue;
+  opacity: .75;
+  grid-row: 2 / 4;
+  grid-column: 2 /4;
+}
+
+
+
+
+/* CAMBIANDO EL ORDEN DE LOS HIJOS */
+.grid-order {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, fr);
+}
+.grid-order .item:nth-child(1) {
+  order: 1;
+}
+.grid-order .item:nth-child(2) {
+  order: 1;
+}
+
+
+
+
+.grid-align {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /* Justify items ayudan a alinear el hijo en una posicion con respecto a el cuadrito que lo encierra de izquieda a derecha */
+  justify-items: center;
+  /* Esta propiedad te permite alinear los hijos en una poscicion con respecto al cuadro de que los encierra de arriba hacia abajo */
+  align-items: start;
+  align-items: end;
+  align-items: center;
+  /* Tanto "justify-content" como "align-items" reciben cuatro parametros, los 3 expuestos aqui arriba y el asignado por defecto, que es el stretch */
+}
+/* Para alinear un solo item y que los demas sigan en su misma posicion utilizaremos la siguiente sintaxis */
+.grid-align .item:nth-child(4) {
+  justify-self: start;
+  align-self: start;
+}
+
+
+
+
+/* Alinendo los  "tracks". tracks hace referencia a las columnas y las filas en grid.  */
+.grid-align-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /* Justify-content alinea los tracks de la grid en el eje horizontal */
+  justify-content: end;
+  justify-content: space-evenly;
+  /* align-content alinea los track de la grid en el eje vertical */
+  align-content: space-around;
+  align-content: space-evenly;
+}
+
+
+
+
+/* Con esta funcion puedo hacer que el tamaño de un contenedor hijo se adapte al contenido dentro de el, tanto con max y min content, le puedo decir hasta donde crecer, o hasta donde dejar de crecer */
+.grid-min-max {
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(4, minmax(100px,200px)); 
+  grid-template-columns: repeat(4, minmax(min-content, 200px)); 
+  grid-template-columns: repeat(4, minmax(100px, min-content)); 
+  grid-template-columns: repeat(4, minmax(100px, max-content)); 
+}
+
+
+
+
+
+/* DE ESTA MANERA LE DOY UN MEJRO MAQUETADO A MI CONTENEDOR, EN VEZ DE DARLE UNA MEDIDA ESTATICA COMO SERIA EL "1FR" PUEDO CREAR UN PATRON QUE SE VAYA REPIETIENDO DEPENDIENDO DE CUANTOS VALORES LE HAYA ASIGNADO A DICHA PROPIEDAD. */
+.grid-repeat{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4,20PX 30% 50vh);
+  grid-template-rows: repeat(4, 10vh 20vh);
+}
+
+
+
+
+
+.grid-dynamics {
+  display: grid;
+  grid-template-columns: repeat(4,100px);
+  /* "auto fill" rellena la grid dinamicamente */
+  grid-template-columns: repeat(auto-fill,100px);
+  /* "auto fir" austa la girdd con los tracks existentes */
+  grid-template-columns: repeat(auto-fit,100px);
+  grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+  
+}
+
+
+
+
+/* Puedo utilizar esta manera para darle un tamaño responsive a mi web sin la necesidad de utilizar media queris */
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1vw;
+}
+
+
+
+
+
+
+.grid-nested {
+  display: grid;
+  grid-template-rows: repeat(3, fr);
+}
+
+
+
+
+

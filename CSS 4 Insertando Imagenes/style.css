@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1609884610425-471b006ed069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.foto {
+    /* background-image: url("https://images.unsplash.com/photo-1561298233-594c88dcc7f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG5hdHVyYWxlemF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"); */
+    width: 500px;
+    height: 700px;
+    border: 7px solid black;
+    background-repeat: no-repeat;
+    /*background-position: bottom 10px right 10px; con estos elementos PUEDO POSICIONAR MI IMGAEN DENTRIO DE UN DIV*/
+    /*background-size: cover; CON ESTOS ELEMENTOS PUEDO CUBRIR TODO EL DIV CON MI IMAGEN, AUNQUE PUEDE QUE LA CALIDAD DISMINUYA SI LA IMAGEN ES MUY PEQUEÑA*/ 
+    background: linear-gradient(to right, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),url("https://images.unsplash.com/photo-1561298233-594c88dcc7f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG5hdHVyYWxlemF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");/*DE ESTA MANERA PUEDO DEGRADAR EL FONDO DE MI IMAGEN PARA QUE EL TEXTO SEA MAS LEGIBLE*/
+    padding: 14px;
+    box-sizing: border-box;/*DE ESTA MANERA LE DOY UN TAMAÑO LIMITE A MI CAJA, Y LO QUE ESTE ADENTRO SE TENDRA QUE AJUSTAR A ESE TAMAÑO, YA QUE POR DEFECTO SI LE AGREGAMOS ELMENTOS COMO PADDING EL CONTENEDOR EMPEZARA A CRECER.*/
+}
+
+.perfil {
+    background-image: url("https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-position: 50% 50%;
+    border-radius: 50%;
+}
+
+

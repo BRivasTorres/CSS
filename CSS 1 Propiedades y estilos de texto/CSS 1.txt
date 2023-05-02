@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practicando CSS</title>
+</head>
+<body>
+
+    
+
+    <div class="border">
+        <h1>Aprendinedo estilos en CSS</h1>
+
+        <p id="capital">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos inventore omnis corrupti odit optio cumque, debitis, eaque, <span id="span">excepturi fugit repudiandae mollitia ipsam.</span>  Nihil voluptatem inventore distinctio sint accusamus repellendus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga amet vel, enim fugiat cum eum quo impedit recusandae officiis asperiores libero assumenda quaerat soluta, et, eveniet nobis quas veritatis facere?</p>
+        <p>Lorem ipsum <a href="https://youtu.be/TXaDdFCF4-k" target="_blank">ESTE</a> sit amet consectetur, adipisicing elit. Eum quasi, mollitia soluta molestiae voluptatibus quaerat magnam unde quo odit, nam aliquam debitis iure reprehenderit vero dolorum non laboriosam suscipit eaque.</p>
+    </div>
+    
+    
+</body>
+</html>

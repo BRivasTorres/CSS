@@ -1,0 +1,173 @@
+/* & Day One */
+/* .main {
+    margin: 0 auto;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.main__text {
+    width: 50%;
+    padding: 2rem;
+} */
+
+/* &Day three */
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: aquamarine;
+}
+.intro-content {
+    width: 80%;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.text-info {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 780px;
+} */
+
+
+/* &Day Four */
+/* * {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    width: 50%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+}
+button {
+    font-size: 1.5rem;
+    background-color: violet;
+    color: blue;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    width: 50%;
+} */
+
+/* *Day Seven */
+/* body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: limegreen;
+}
+.row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+}
+.col {
+    text-align: center;
+} */
+
+
+/* &Day Eleven */
+/* *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #136c72;
+    padding: 0.5em 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav__list--primary {
+    margin: 0 auto;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 4rem;
+}
+
+.nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: 0.25em 1em;
+    border-radius: 10em;
+}
+
+.nav__link:hover {
+    opacity: 0.75;
+} */
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container1 {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.container2 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.container2 h2{
+    text-align: center;
+}
+.container2__p {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5rem;
+} */
+

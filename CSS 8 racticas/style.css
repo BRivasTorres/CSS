@@ -1,0 +1,10 @@
+a:link {
+    color: red;/*Para cambiar de estilo a mis links */
+}
+a:visited{
+    color: green;/*Para cambiar de estilo a mis links, una vez que el usuario ya haya visitado ese link*/
+}
+a:active {
+    color: aliceblue;/*Para cuando necesito cambiar el color minetras esta presionado el click*/
+}
+/*PSUDOCLASES EN FORMULARIOS*/

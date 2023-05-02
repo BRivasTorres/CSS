@@ -1,0 +1,35 @@
+/*.contenedor {
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    background-color: gray;*/
+
+    /*transition-property: background-color, width;
+    transition-duration: 2s, 2S; PARA PONER EL TIEMPO EN EL QUE QUIERO QUE HAGA EFECTO EL HOVER, TAMBIEN PUEDO DARLES VALORES A EL ALTO Y EL ANCHO, PONIENDO EL TIEMPO EN ESTA MISMA LINEA SEPARADO POR UNA "," */
+    /*transition-delay: 1s, 2s, 2s ; PARA PONER EL TIEMPO DE RETARDO EN UN ELEMENTO QUE DESEO*/
+    /*transition-timing-function: ease;PARA PONER TRANCICIONES Y QUE VAYA DE UN LADO A OTRO*/
+    /*transition-timing-function: (cubic-bezier(0,.98,1,-0.01));
+}*/
+
+/*.contenedor:hover {
+    background-color: green;
+    width: 100%;
+}*/
+
+.contenedor {
+    border: 1px solid;
+    height: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.barra {
+    height: 100%;
+    width: 10%;
+    background-color: rebeccapurple;
+    transition: width 1000ms cubic-bezier(.33,1.11,.99,-1.05) 5000ms;
+}
+
+.barra:hover {
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    background-color: #937DC2;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    background-color: #C689C6;
+    font-size: 50px;
+    text-align: center;
+    color: #31E1F7;
+    text-shadow: 3px 3px 10px black;/*DE ESTA MANERA LE PUEDO PONER UNA SOMBRA A MI TEXTO, EL PRIMER VALOR ES HACIA LA DERECHA Y EL SEGUNDO ES HACIA LA IZQUIERDA, EL DIFUMINADO ES EL TERCER VALOR*/
+}
+
+p {
+    background-color: #FFABE1;
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;/*DE ESTA MANERA PONGO MIS MARGENES AUTOMATICOS Y RESPONSIVOS, ASI SE ADAPTAN AL TAMAÑO DE MI VISUALIZACION*/
+    margin-right: auto;
+}
+
+p#capital::first-letter{/*DE ESTA MAENRA AGREGO ESTILOS A MI PSUDOETIQUETA, PUEDO UTILIZAR "ID O CLASS" SOLO DEBO DE PONER LOS "::" SEGUIDOS POR EL ATRIBUTO QUE QUIERO CAMBIAR*/
+    color: red;
+    font-size: 50px;
+    float: left;
+    background-color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+a {
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: #367E18;
+}
+a:hover {
+    color: #400D51;
+    background-color: #D800A6;
+}
+#span {
+    text-decoration: underline;
+    background-color: #D800A6;
+}
+
+.border {
+    border: 5px solid #FF7777;
+    margin-top: 10%;
+}

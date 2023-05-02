@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#fondo1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url("./imgs/img1.jpg") no-repeat;
+    background-size: cover;
+}
+
+#fondo2 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url("./imgs/img2.webp") no-repeat;
+    background-size: cover;
+}
+
+#fondo3 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url("./imgs/3.jpg") no-repeat;
+    background-size: cover;
+}
+
+#fondo4 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url("./imgs/img4.jpg");
+    background-size: cover;
+    animation: miAnimation 24s ease-in-out 4s infinite;
+}
+
+
+/* Realizing the animation */
+@keyframes miAnimation {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This help us to make avilable ours animations to other persons, if these persons dont have an navegator actualized */
+/* @-webkit-keyframes miAnimation {
+    0% {
+            opacity: 1;
+        }
+    
+        50% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+} */
+
+
+
+
+
+
+
+
+
+
