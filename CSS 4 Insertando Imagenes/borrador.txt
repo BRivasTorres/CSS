@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertando imagenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="foto">
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo pariatur vel ratione animi obcaecati, voluptate aliquam dolor dignissimos fugiat minus possimus veritatis nesciunt maxime magnam voluptatem aliquid, repellat molestiae eum.
+            Doloremque vero officia nam repudiandae blanditiis excepturi, architecto iusto autem magnam doloribus alias ad quo sunt molestiae! Ipsa, velit nihil molestias necessitatibus aperiam itaque tempora sed harum neque doloremque earum!
+            Reiciendis delectus pariatur porro totam cum? Aperiam reiciendis quas animi omnis quidem iusto ipsam culpa ex iste voluptatem. Repellat, molestiae odio. Reprehenderit enim quis laudantium vel veritatis deleniti magni voluptatum
+        </P>
+    </div>
+    <div class="perfil"></div>
+     
+</body>
+</html>

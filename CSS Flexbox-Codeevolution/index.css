@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+}
+/* DE ESTA MANERA PUEDO COLOCAR TODOS MIS ITEMS DENTRO DE UNA SOLA LINEA */
+/* .container{
+    display: flex;
+    inline-flex: flex;
+} */
+
+
+
+
+
+/* DE ESTA MANERA PUEDO DARLE DIRECCION A MIS ITEMS, DEPENDIENDO DE A DONDE QUIERO QUE SE MUEVAN */
+/* .container{
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+
+
+
+/* DE ESTA MANERA MIS ITEMS SE MOVERAN PARA OCUPAR UN ESPACIO AVAJO O ARRIBA DE MIS DEMAS ITEMS CONTROLA EL ESPACIO DE MIS ITEMS DENTRO DE MI CONTENEDOR*/
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+
+/* SHORHAND */
+/* .container{
+    display: flex;
+     ACEPTA "FLEX-DIRECTION" Y "FLEX-WRAP"
+    flex-flow: row-reverse wrap;
+} */
+
+
+
+
+/* FLEX-END FLEX-START CENTER */
+/* SPACE-BETWEEN SPACE-AROUND SPACE-EVENLY */
+/* .container{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+
+
+
+
+/* ME PERMITE POSICIONAR MIS ELEMENTOS EN DIRECCION VERICAL, LOS PARAMETROS QUE RECIVE SON: FLEX-START, FLEX-END, CENTER, BASELINE Y STRETCH QUE ES EL QUE TIENE POR DEFECTO */
+/* .container{
+    display: flex;
+    align-items: center;
+} */
+
+
+
+
+
+/* ME PERMITE ORDENAR CONTENIDO A LO LARGO DE MI CONTENEDOR, UTILIZA LAS MISMAS PROPIEDADES QUE LA ANTERIOR, PERO EN VEZ DE COLOCARLE ESTE ESPACIO A CADA UNA POR SEPARADO SE LOS COLOCA A TODO EL CONTENEDOR */
+/* .container{
+    display: flex;
+    align-content: center;
+} */
+
+
+
+/* ACEN A NUESTROS ITEMS EXPANDIRSE DE MANERA UNITARIA */
+/* .container{
+    display: flex;
+    flex-grow: 5;
+} */
+
+
+
+
+
+/* ESTA PROPIEDAD PERMITE A MIS ELEMENTSO ENCOGERSE SEGUN EL PARAMETRO QUE YO LES PASE
+.container{
+    display: flex;
+    flex-shrink: 0;
+} */
+
+
+
+/* ESTA PROPIEDAD PERMITE ESTABLECER EL TAMAÑO FLEXIVO DE UN ITEM */
+/* .container{
+    display: flex;
+    flex-basis: 200PX;
+} */
+
+
+
+/* SHORTHAND PARA: FLEX-GROW FLEX-SHRINK FLEX-BASIS EN ESE ORDEN SEPARADOS POR UN ESPACIO */
+/* .container{
+    display: flex;
+    flex: 200PX;
+} */
+
+
+
+/* AYUDA A COLOCAR EN UN ESPACIO CONCRETO UN SOLO ELEMENTO ACEPTA LOS SIGUIENTES VALORES: FLEX-START, FLEX-END, CENTER Y STRETCH
+.container{
+    display: flex;
+    align-self: flex-start;
+} */
+
+
+
+
+
+/* .flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.item-1 {
+    background-color: red;
+}
+.item-2 {
+    background-color: orange;
+}
+.item-3 {
+    background-color: cyan;
+}
+.item-4 {
+    background-color: blue;
+}
+.item-5 {
+    background-color: yellow;
+}
+.item-6 {
+    background-color: yellowgreen;
+}
+.item-7 {
+    background-color: black;
+}
+.item-8 {
+    background-color: chocolate;
+}
+.item-9 {
+    background-color: royalblue;
+} */
+
+
+
+
+
+
+
+
+
+
+
+

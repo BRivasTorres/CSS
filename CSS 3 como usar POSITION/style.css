@@ -1,0 +1,43 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    font-size: 60px;
+    background-color: wheat;
+}
+
+div {
+    padding-left: 5px;
+}
+
+.static {
+    background-color: coral;
+    position: static;
+}
+
+.relative {
+    background-color: #e56b6f;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 30px;
+    left: 30px;   
+}
+
+.absolute {
+    background-color: #5800FF;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.sticky {
+    background-color: aqua;
+    position: sticky;
+    top: 0;/*CON ESTA POSICION PUEDO DEJAR PEGADO ALGO QEU DESEE, SI LA PAGINA ES DEMASIADO LARGA, AL IR VAJANDO SE QUEDARA EN EL TOP LO QUE YO HAYA PUESTO*/
+}
+
+.fixed {
+    background-color: chocolate;
+    position: fixed;
+}
